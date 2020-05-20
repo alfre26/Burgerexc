@@ -1,0 +1,16 @@
+@import "./components/config";
+
+*, 
+*::before, 
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "./components/navigation";
+@import "./components//hero";
+@import "./components/menu";
+@import "./components/feedback";
+@import "./components/reservation";
+@import "./components/footer";

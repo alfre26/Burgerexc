@@ -1,0 +1,10 @@
+.feedback{
+    height: 50vh;
+    background: #E74C3C;
+    h1{
+        transform: translateY(1em);
+        text-align: center;
+        color: $text-color;
+        font-size: 3em;
+    }
+}

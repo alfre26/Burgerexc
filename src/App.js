@@ -1,11 +1,26 @@
-import React from 'react';
+import React, {Fragment} from 'react';
+
+
+//Components
+import Navigation from './components/Navigation'
+import Hero from './components/Hero'
+import Menu from './components/Menu'
+import Feedback from './components/Feedback'
+import Reservation from './components/Reservation'
+import Footer from './components/Footer'
+
 
 
 function App() {
   return (
-    <div className="App">
-      <h1> gola</h1>
-    </div>
+    <Fragment>
+        <Navigation/>
+        <Hero/>
+        <Menu/>
+        <Feedback/>
+        <Reservation/>
+        <Footer/>
+    </Fragment>
   );
 }
 

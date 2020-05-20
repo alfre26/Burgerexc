@@ -1,0 +1,40 @@
+.menu{
+    position: relative;
+    min-height: 80vh;
+    width: 100%;
+    &__container{
+        display: flex;
+        .left_side{
+            width: 35%;
+            height: 80vh;
+            background-image: url("../img/img-2.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .right{
+            width: 65%;
+            height: 80vh;
+            .carta{
+                position: absolute;
+                height: 65vh;
+                width: 1000px;
+                max-width: 1000px;
+                background: #fcf6db;
+                transform: translateX(8em);
+                bottom: 0;
+            }
+
+            h1{
+                width: 100px;
+                text-transform: uppercase;
+                transform: translateX(3.15em) translateY(2.5em);
+                font-size: 40px;
+                font-family: sans-serif;
+                letter-spacing: 2px;
+            }
+        }
+        
+    }
+}

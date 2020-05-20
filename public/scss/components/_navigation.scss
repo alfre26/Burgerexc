@@ -1,0 +1,48 @@
+.nav{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    
+    
+
+
+    &__container{
+        width: 50%;
+        margin: auto;
+
+
+        .nav__wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            color: $text-color;
+            .nav__logo{
+                font-size: 1.6em;
+                font-family: 'Chewy', cursive;
+                cursor: pointer;
+                
+            }
+            .nav__links li{
+                color: $text-color;
+                display: inline;
+                padding: 20px;
+                font-weight: bold;
+                font-size: 1.6em;
+                font-family: 'Roboto', sans-serif;
+                cursor: pointer;
+            }
+        }
+        .line{
+            color: #282828;
+        }
+    
+    } 
+}
+
+@media (max-width: 768px){
+    .nav{
+        display: none;
+    }
+}
