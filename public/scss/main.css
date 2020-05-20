@@ -12,7 +12,7 @@
   top: 0;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
 }
 
 .nav__container {
@@ -35,7 +35,8 @@
 }
 
 .nav__container .nav__wrapper .nav__logo {
-  font-size: 1.6em;
+  text-transform: uppercase;
+  font-size: 2.5em;
   font-family: 'Chewy', cursive;
   cursor: pointer;
 }
@@ -139,6 +140,7 @@
   position: relative;
   min-height: 80vh;
   width: 100%;
+  z-index: 10;
 }
 
 .menu__container {
@@ -183,26 +185,186 @@
 }
 
 .feedback {
-  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #E74C3C;
 }
 
-.feedback h1 {
-  -webkit-transform: translateY(1em);
-          transform: translateY(1em);
+.feedback__container {
+  width: 70%;
+  padding: 7rem;
+}
+
+.feedback__container h1 {
+  -webkit-transform: translateY(-1.5em);
+          transform: translateY(-1.5em);
   text-align: center;
   color: #fff;
   font-size: 3em;
 }
 
+.feedback__container .card_container {
+  overflow-x: hidden;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.feedback__container .tomato {
+  position: absolute;
+  -webkit-transform: translateX(370%) translateY(-170%);
+          transform: translateX(370%) translateY(-170%);
+}
+
+.feedback__container .tomato2 {
+  position: absolute;
+  -webkit-transform: translateY(-130%);
+          transform: translateY(-130%);
+}
+
+.feedback__container .fries {
+  position: absolute;
+  -webkit-transform: translateX(-280%) translateY(-50%);
+          transform: translateX(-280%) translateY(-50%);
+}
+
+.feedback__container .fries2 {
+  position: absolute;
+  -webkit-transform: translateX(430%) translateY(-50%);
+          transform: translateX(430%) translateY(-50%);
+}
+
+.feedback__container .burger {
+  position: absolute;
+  -webkit-transform: translateX(-190%) translateY(-180%);
+          transform: translateX(-190%) translateY(-180%);
+}
+
+.feedback__container .burger2 {
+  position: absolute;
+  -webkit-transform: translateX(760%) translateY(-90%);
+          transform: translateX(760%) translateY(-90%);
+}
+
 .reservation {
   height: 50vh;
   background: #F3F3F3;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reservation .cabecera {
+  font-size: 3em;
+  text-align: center;
+}
+
+.reservation .btn:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .footer {
-  padding: 30px;
+  padding: 20px;
   background: #282828;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .copy {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.footer .social_media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer .social_media .facebook,
+.footer .social_media .instagram,
+.footer .social_media .twitter {
+  cursor: pointer;
+  font-size: 40px;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.footer .social_media .facebook:hover {
+  color: #3b5998;
+}
+
+.footer .social_media .instagram:hover {
+  color: #b64b9d;
+}
+
+.footer .social_media .twitter:hover {
+  color: #579ff1;
+}
+
+.card {
+  position: relative;
+  padding: 25px 40px;
+  margin: auto 10px;
+  background: rgba(208, 210, 217, 0.699);
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.card .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.card .rating .star {
+  width: 50%;
+  color: yellow;
+}
+
+.card .rating p {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.466);
+}
+
+.card p {
+  width: 250px;
+  text-align: left;
 }
 /*# sourceMappingURL=main.css.map */

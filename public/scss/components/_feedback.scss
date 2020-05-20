@@ -1,10 +1,49 @@
 .feedback{
-    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: #E74C3C;
-    h1{
-        transform: translateY(1em);
-        text-align: center;
-        color: $text-color;
-        font-size: 3em;
+
+    &__container{
+
+        width: 70%;
+        padding: 7rem;
+        h1{
+            transform: translateY(-1.5em);
+            text-align: center;
+            color: $text-color;
+            font-size: 3em;
+        }
+        .card_container{
+            overflow-x: hidden;
+            margin: auto;
+            display: flex;
+            width: 100%;
+        }
+        .tomato{
+            position: absolute;
+            transform: translateX(370%) translateY(-170%);
+        }
+        .tomato2{
+            position: absolute;
+            transform: translateY(-130%);
+        }
+        .fries{
+            position: absolute;
+            transform: translateX(-280%) translateY(-50%);
+        }
+        .fries2{
+            position: absolute;
+            transform: translateX(430%) translateY(-50%);
+        }
+        .burger{
+            position: absolute;
+            transform: translateX(-190%) translateY(-180%);
+        }
+        .burger2{
+            position: absolute;
+            transform: translateX(760%) translateY(-90%);
+        }
     }
 }
