@@ -18,12 +18,12 @@ export default class Feedback extends Component {
 
         
 
-          <img className="tomato" src="../img/tomato.svg" />
-          <img className="tomato2" src="../img/tomato-2.svg" />
-          <img className="fries" src="../img/fries.svg" />
-          <img className="fries2" src="../img/fries-2.svg" />
-          <img className="burger" src="../img/burger.svg" />
-          <img className="burger2" src="../img/burger2.svg" />
+          <img className="tomato" src="../img/tomato.svg"  alt="img"/>
+          <img className="tomato2" src="../img/tomato-2.svg" alt="img" />
+          <img className="fries" src="../img/fries.svg" alt="img" />
+          <img className="fries2" src="../img/fries-2.svg"  alt="img"/>
+          <img className="burger" src="../img/burger.svg" alt="img" />
+          <img className="burger2" src="../img/burger2.svg" alt="img" />
 
         </div>
       </div>
