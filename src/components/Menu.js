@@ -10,15 +10,6 @@ export default class Menu extends Component {
           <div className="right">
             <h1>menu</h1>
             <div className="carta">
-              <div className="menu_nav">
-                <Link className="link active" to="#">
-                  Food
-                </Link>
-                <Link className="link" to="#">
-                  Drinks
-                </Link>
-              </div>
-
               <div className="contenido">
                 <ul>
                   <li>
@@ -85,7 +76,16 @@ export default class Menu extends Component {
                   </li>
                 </ul>
               </div>
+              
+              <div className="menu_nav">
+                <Link to="/menu" className="link active">
+                  View menu 
+                </Link>
+              </div>
+                  
             </div>
+
+
           </div>
         </div>
       </div>
