@@ -8,9 +8,9 @@ export default class Menu extends Component {
         <div className="menu__container">
           <div className="left_side"></div>
           <div className="right">
-            <h1>menu</h1>
             <div className="carta">
               <div className="contenido">
+                <h1>menu</h1>
                 <ul>
                   <li>
                     <div className="description">
@@ -76,16 +76,12 @@ export default class Menu extends Component {
                   </li>
                 </ul>
               </div>
-              
-              <div className="menu_nav">
+              <div className="btnMenu">
                 <Link to="/menu" className="link active">
-                  View menu 
+                  View menu
                 </Link>
               </div>
-                  
             </div>
-
-
           </div>
         </div>
       </div>

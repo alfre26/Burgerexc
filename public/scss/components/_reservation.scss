@@ -1,17 +1,16 @@
-.reservation{
-    height: 50vh;
-    background: #F3F3F3;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.reservation {
+  background: #f3f3f3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    .cabecera{
-        font-size: 3em;
-        text-align: center;
-    }
-    .btn:hover{
-        cursor: pointer;
-        background: rgba($color: #000000, $alpha: 0.9);
-    }
+  .cabecera {
+    font-size: 3em;
+    text-align: center;
+  }
+  .btn:hover {
+    cursor: pointer;
+    background: rgba($color: #000000, $alpha: 0.9);
+  }
 }

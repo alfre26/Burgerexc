@@ -1,5 +1,6 @@
 .card {
   position: relative;
+  min-width: 300px;
   padding: 25px 40px;
   margin: auto 10px;
   background: rgba(208, 210, 217, 0.699);
@@ -7,21 +8,23 @@
   border-radius: 10px;
   .rating {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 
     .star {
       width: 50%;
       color: yellow;
+      font-size: 1em;
     }
     p {
-      font-size: 12px;
+      font-size: 0.8em;
       color: rgba(0, 0, 0, 0.466);
     }
   }
 
-  p {
-    width: 250px;
-    text-align: left;
+  .comment {
+    // text-align: left;
+    font-size: 1em;
   }
 }

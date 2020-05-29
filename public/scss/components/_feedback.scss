@@ -1,56 +1,26 @@
-.feedback{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #E74C3C;
-    z-index: 10;
+.feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #e74c3c;
+  z-index: 10;
 
-    &__container{
-        width: 70%;
-        padding: 7rem;
-        z-index: 10;
-        h1{
-            transform: translateY(-1.5em);
-            text-align: center;
-            color: $text-color;
-            font-size: 3em;
-        }
-        .card_container{
-            overflow-x: hidden;
-            margin: auto;
-            display: flex;
-            width: 100%;
-        }
-        .tomato{
-            position: absolute;
-            transform: translateX(330%) translateY(-135%);
-            z-index: -1;
-        }
-        .tomato2{
-            position: absolute;
-            transform: translateY(-130%);
-            z-index: -1;
-        }
-        .fries{
-            position: absolute;
-            transform: translateX(-280%) translateY(-50%);
-            z-index: -1;
-        }
-        .fries2{
-            position: absolute;
-            transform: translateX(370%) translateY(-50%);
-            z-index: -1;
-        }
-        .burger{
-            position: absolute;
-            transform: translateX(-190%) translateY(-180%);
-            z-index: -1;
-        }
-        .burger2{
-            position: absolute;
-            transform: translateX(760%) translateY(-80%);
-            z-index: -1;
-        }
+  &__container {
+    width: 70%;
+    padding: 5rem 0;
+    z-index: 10;
+    h1 {
+      margin-top: -30px;
+      margin-bottom: 10px;
+      text-align: center;
+      color: $text-color;
+      font-size: 3em;
     }
+    .card_container {
+      overflow-x: hidden;
+      margin: auto;
+      display: flex;
+    }
+  }
 }

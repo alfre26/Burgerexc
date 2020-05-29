@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 
 export default class Reservation extends Component {
+  handleSubmit = (event) => {
+    event.preventDefault();
+  };
   render() {
     return (
       <div className="reservation">
         <form className="form bg-white p-6 my-10 relative">
-          
           <h3 className="cabecera">Events</h3>
-          
           <div className="flex space-x-5 mt-3">
             <input
               type="text"
@@ -36,6 +37,7 @@ export default class Reservation extends Component {
           <input
             type="submit"
             value="Send"
+            onClick={this.handleSubmit}
             className="btn w-full mt-6 bg-black text-white font-semibold p-3"
           />
         </form>

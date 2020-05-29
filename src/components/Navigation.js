@@ -1,20 +1,19 @@
 import React, { Component } from "react";
 
 export default class Navigation extends Component {
-  
   state = {
-      active: false
-  }
-  componentDidMount(){
-    window.addEventListener('scroll', this.handleScroll)
+    active: false,
+  };
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
   }
   //Sticky navegation
-  handleScroll = () => window.scrollY === 0 ? this.setState({active: false}): this.setState({active: true});
-    
-  
+  handleScroll = () =>
+    window.scrollY === 0
+      ? this.setState({ active: false })
+      : this.setState({ active: true });
 
   render() {
-
     return (
       <div className={this.state.active ? "nav active" : "nav"}>
         <div className="nav__container">
@@ -24,6 +23,9 @@ export default class Navigation extends Component {
                 <li>Welcome</li>
                 <li>Menu</li>
               </ul>
+            </div>
+            <div className="hamburger">
+              <div className="lines"></div>
             </div>
             <div className="nav__logo">
               <h1>Burgerexc</h1>
@@ -36,7 +38,7 @@ export default class Navigation extends Component {
               </ul>
             </div>
           </div>
-          <hr className="line" />
+          <hr className={this.state.active ? "line active" : "line"} />
         </div>
       </div>
     );

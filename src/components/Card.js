@@ -15,7 +15,7 @@ export default class Card extends Component {
           <p>{this.props.fecha}</p>
         </div>
 
-        <p>{this.props.text}</p>
+        <p className="comment">{this.props.text}</p>
       </div>
     );
   }

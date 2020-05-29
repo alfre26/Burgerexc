@@ -4,7 +4,7 @@ export default class Hero extends Component {
   render() {
     return (
       <div className="hero">
-       <div className="overlay">
+        <div className="overlay">
           <div className="hero__container">
             <h3>Welcome to</h3>
             <h1>Burgerexc</h1>
@@ -12,9 +12,9 @@ export default class Hero extends Component {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu nunc
               sit tortor augue.
             </p>
-            
+
             <svg
-            className="mouse-svg"
+              className="mouse-svg"
               width="70"
               height="58"
               viewBox="0 0 70 58"
@@ -38,7 +38,7 @@ export default class Hero extends Component {
               </defs>
             </svg>
           </div>
-       </div>
+        </div>
       </div>
     );
   }
